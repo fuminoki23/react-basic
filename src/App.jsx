@@ -7,7 +7,8 @@ const App = () => {
   const [faceShowFlag, setFaceShowFlag] = useState(false);
 
   const onClickCountUp = () => {
-    setNum(num + 1);
+    setNum((num) => num + 1);
+    // setNum(num + 1);
   };
 
   const onClickSwitchShowFlag = () => {
